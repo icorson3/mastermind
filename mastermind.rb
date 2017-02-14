@@ -47,10 +47,10 @@ end
       puts "You got the write answer!"
       exit
     end
-    elements = guess.zip(key).count do |g|
+    positions = guess.zip(key).count do |g|
                 g[0] == g[1]
               end
-    positions = guess.uniq.count do |g|
+    elements = guess.uniq.count do |g|
                   key.include?(g)
                 end
     puts "You got #{elements} correct elements in #{positions} correct positions"
