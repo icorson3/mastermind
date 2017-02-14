@@ -23,4 +23,6 @@ class Mastermind
   end
 end
 
-Mastermind.new
+if __FILE__ == $0
+  Mastermind.new
+end
